@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>JSP Servlet Demo</display-name>
+    <description>Ứng dụng mẫu JSP và Servlet đầu tiên trên Tomcat 10.1+</description>
+
+    <!-- Trang khởi động mặc định -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- 
+        Lưu ý: Servlet mapping cho HelloServlet (/hello) đã được khai báo trực tiếp
+        bằng annotation @WebServlet(name = "HelloServlet", urlPatterns = {"/hello"}) 
+        trong file HelloServlet.java. Để tuân thủ nguyên tắc không khai báo mapping trùng lặp,
+        không cấu hình lại thẻ <servlet> và <servlet-mapping> tại đây.
+    -->
+
+</web-app>
